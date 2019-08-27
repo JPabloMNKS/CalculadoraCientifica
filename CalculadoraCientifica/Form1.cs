@@ -17,6 +17,14 @@ namespace CalculadoraCientifica
         private int mouseX;
         private int mouseY;
 
+        // Variables de Calculadora
+        bool igual = true, inicio = true, operacion1 = true, operacion2 = true;
+        double a, b, c, memoria = 0, resultado, valor1, valor2;
+        String funciones, tipoOperaciones;
+
+        //Botones numericos
+
+
         public Form1()
         {
             InitializeComponent();
@@ -49,5 +57,78 @@ namespace CalculadoraCientifica
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        // Calculadora
+
+        private void Numero_Click(int n)
+        {
+            if (inicio)
+            {
+                textBox_principal.Text = "";
+                textBox_principal.Text = n+"";
+                inicio = false;
+            }
+            else
+            {
+                textBox_principal.Text += n + "";
+            }
+        }
+
+
+        private void Btn1_Click(object sender, EventArgs e)
+        {
+            Numero_Click(1);
+        }
+        private void Btn2_Click(object sender, EventArgs e)
+        {
+            Numero_Click(2);
+        }
+        private void Btn3_Click(object sender, EventArgs e)
+        {
+            Numero_Click(3);
+        }
+        private void Btn4_Click(object sender, EventArgs e)
+        {
+            Numero_Click(4);
+        }
+        private void Btn5_Click(object sender, EventArgs e)
+        {
+            Numero_Click(5);
+        }
+        private void Btn6_Click(object sender, EventArgs e)
+        {
+            Numero_Click(6);
+        }
+        private void Btn7_Click(object sender, EventArgs e)
+        {
+            Numero_Click(7);
+        }
+        private void Btn8_Click(object sender, EventArgs e)
+        {
+            Numero_Click(8);
+        }
+        private void Btn9_Click(object sender, EventArgs e)
+        {
+            Numero_Click(9);
+        }
+        private void Btn0_Click(object sender, EventArgs e)
+        {
+            Numero_Click(0);
+        }
+
+        private void Btn_decimal_Click(object sender, EventArgs e)
+        {
+            if (textBox_principal.Text.Contains("."))
+            {
+
+            }
+            else
+            {
+                textBox_principal.Text += ".";
+                inicio = false;
+            }
+        }
+
+
     }
 }
