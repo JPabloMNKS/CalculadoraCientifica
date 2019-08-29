@@ -265,6 +265,91 @@ namespace CalculadoraCientifica
             textBox_principal.Text = Math.PI.ToString();
         }
 
+        private void BtnXmenos1_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = valor1.ToString() + "^-1";
+            txtBox_previo.Text = Math.Pow(valor1, -1).ToString();
+        }
+
+        private void BtnExponente_Click(object sender, EventArgs e)
+        {
+            inicio = true;
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = valor1.ToString() + " ^";
+
+            tipoOperaciones = "Potencia";
+            operacion1 = false;
+            igual = true;
+        }
+
+        private void BtnNeperiano_Click(object sender, EventArgs e)
+        {
+            txtBox_previo.Text = "";
+            textBox_principal.Text = Convert.ToString(Math.E);
+        }
+        private void BtnRaizX_Click(object sender, EventArgs e)
+        {
+            inicio = true;
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "√" + valor1;
+            tipoOperaciones = "raizx";
+            igual = true;
+        }
+        private void BtnCubo_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "("+valor1.ToString()+")^3";
+            textBox_principal.Text = Math.Pow(valor1, 3).ToString();
+        }
+        private void BtnCuadrado_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "(" + valor1.ToString() + ")^2";
+            textBox_principal.Text = Math.Pow(valor1, 2).ToString();
+        }
+        private void BtnFactorial_Click(object sender, EventArgs e)
+        {
+            a = 1;
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "(" + valor1.ToString() + ")!";
+            for (b = 1; b <= valor1; b++)
+            {
+                a *= b;
+            }
+            textBox_principal.Text = Convert.ToString(a);
+        }
+        private void BtnRaizCubica_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            a = 1;
+            b = 3;
+            c = a / b;
+            textBox_principal.Text = Math.Pow(valor1, c).ToString();
+            txtBox_previo.Text = "3 √" + valor1.ToString();
+        }
+
+        private void Btn10elevarX_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "10^(" + valor1.ToString() + ")";
+            textBox_principal.Text = Convert.ToString(Math.Pow(10, valor1));
+        }
+
+        private void BtnEXP_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "e^(" + valor1.ToString() + ")";
+            textBox_principal.Text = Convert.ToString(Math.Exp(valor1));
+        }
+
+        private void BtnLog_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(textBox_principal.Text);
+            txtBox_previo.Text = "Log(" + valor1.ToString() + ")";
+            textBox_principal.Text = Convert.ToString(Math.Log10(valor1));
+        }
+
         private void BtnRaiz_Click(object sender, EventArgs e)
         {
             valor1 = Convert.ToDouble(textBox_principal.Text);
@@ -278,7 +363,6 @@ namespace CalculadoraCientifica
                 textBox_principal.Text = "Error";
             }
         }
-
         private void BtnPorcentaje_Click(object sender, EventArgs e)
         {
             valor2 = Convert.ToDouble(textBox_principal.Text);
@@ -305,7 +389,6 @@ namespace CalculadoraCientifica
             valor2 = 0;
             resultado = 0;
         }
-
         private void BtnCE_Click(object sender, EventArgs e)
         {
             txtBox_previo.Text = "";
@@ -313,7 +396,6 @@ namespace CalculadoraCientifica
             inicio = true;
             funciones = "";
         }
-
         private void BtnRetroceso_Click(object sender, EventArgs e)
         {
             if (textBox_principal.Text.Length > 1)
@@ -330,18 +412,10 @@ namespace CalculadoraCientifica
                 }
             }
         }
-
         private void BtnMasMenos_Click(object sender, EventArgs e)
         {
             textBox_principal.Text = Convert.ToString(0 - Convert.ToDouble(textBox_principal.Text));
         }
-
-
-
-
-
-
-
         private void BtnIgual_Click(object sender, EventArgs e)
         {
             inicio = true;
@@ -355,7 +429,7 @@ namespace CalculadoraCientifica
                 else
                 {
                     valor2 = Convert.ToDouble(textBox_principal.Text);
-                    txtBox_previo.Text += textBox_principal;
+                    txtBox_previo.Text += textBox_principal.Text;
                     Operaciones(valor1, valor2);
                     igual = false;
                 }
@@ -385,6 +459,8 @@ namespace CalculadoraCientifica
             }
             tipoOperaciones = signo;
         }
+
+
         private void Operaciones(double valor1,double valor2)
         {
             switch (tipoOperaciones)
@@ -414,6 +490,26 @@ namespace CalculadoraCientifica
                         resultado = valor1 / valor2;
                         textBox_principal.Text = resultado.ToString();
                         valor1 = Convert.ToDouble(textBox_principal.Text);
+                    }
+                    break;
+                case "Potencia":
+                    resultado = Math.Pow(valor1, valor2);
+                    textBox_principal.Text = resultado.ToString();
+                    valor1 = Convert.ToDouble(textBox_principal.Text);
+                    break;
+                case "raizx":
+                    if(valor2 <= 0)
+                    {
+                        textBox_principal.Text = "Error";
+                    }
+                    else
+                    {
+                        txtBox_previo.Text = valor2 + "" + txtBox_previo.Text;
+                        txtBox_previo.Text = txtBox_previo.Text.Remove(txtBox_previo.Text.Count()-textBox_principal.Text.Count());
+                        a = 1;
+                        c = a / valor2;
+                        textBox_principal.Text = Math.Pow(valor1, c).ToString();
+
                     }
                     break;
 

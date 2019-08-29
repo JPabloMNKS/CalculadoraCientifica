@@ -61,24 +61,24 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.btn_decimal = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnExponente = new System.Windows.Forms.Button();
+            this.btnXmenos1 = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.btnCubo = new System.Windows.Forms.Button();
+            this.btnRaizX = new System.Windows.Forms.Button();
+            this.btnNeperiano = new System.Windows.Forms.Button();
             this.btnTan = new System.Windows.Forms.Button();
             this.btnCos = new System.Windows.Forms.Button();
             this.btnSin = new System.Windows.Forms.Button();
             this.btnTan1 = new System.Windows.Forms.Button();
             this.btnCos1 = new System.Windows.Forms.Button();
             this.btnSin1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCuadrado = new System.Windows.Forms.Button();
+            this.btnRaizCubica = new System.Windows.Forms.Button();
+            this.btnFactorial = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
+            this.btnEXP = new System.Windows.Forms.Button();
+            this.btn10elevarX = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -173,24 +173,24 @@
             this.panel1.Controls.Add(this.btn1);
             this.panel1.Controls.Add(this.btn_decimal);
             this.panel1.Controls.Add(this.btn0);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.btnExponente);
+            this.panel1.Controls.Add(this.btnXmenos1);
             this.panel1.Controls.Add(this.btnPi);
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Controls.Add(this.button17);
-            this.panel1.Controls.Add(this.button18);
+            this.panel1.Controls.Add(this.btnCubo);
+            this.panel1.Controls.Add(this.btnRaizX);
+            this.panel1.Controls.Add(this.btnNeperiano);
             this.panel1.Controls.Add(this.btnTan);
             this.panel1.Controls.Add(this.btnCos);
             this.panel1.Controls.Add(this.btnSin);
             this.panel1.Controls.Add(this.btnTan1);
             this.panel1.Controls.Add(this.btnCos1);
             this.panel1.Controls.Add(this.btnSin1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnCuadrado);
+            this.panel1.Controls.Add(this.btnRaizCubica);
+            this.panel1.Controls.Add(this.btnFactorial);
+            this.panel1.Controls.Add(this.btnLog);
+            this.panel1.Controls.Add(this.btnEXP);
+            this.panel1.Controls.Add(this.btn10elevarX);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 246);
             this.panel1.Name = "panel1";
@@ -612,33 +612,35 @@
             this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.Btn0_Click);
             // 
-            // button13
+            // btnExponente
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(200, 125);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(88, 44);
-            this.button13.TabIndex = 35;
-            this.button13.Text = "x^y";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnExponente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnExponente.FlatAppearance.BorderSize = 0;
+            this.btnExponente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExponente.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExponente.ForeColor = System.Drawing.Color.White;
+            this.btnExponente.Location = new System.Drawing.Point(200, 125);
+            this.btnExponente.Name = "btnExponente";
+            this.btnExponente.Size = new System.Drawing.Size(88, 44);
+            this.btnExponente.TabIndex = 35;
+            this.btnExponente.Text = "x^y";
+            this.btnExponente.UseVisualStyleBackColor = false;
+            this.btnExponente.Click += new System.EventHandler(this.BtnExponente_Click);
             // 
-            // button14
+            // btnXmenos1
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(106, 125);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(88, 44);
-            this.button14.TabIndex = 34;
-            this.button14.Text = "x^-1";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnXmenos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnXmenos1.FlatAppearance.BorderSize = 0;
+            this.btnXmenos1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXmenos1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXmenos1.ForeColor = System.Drawing.Color.White;
+            this.btnXmenos1.Location = new System.Drawing.Point(106, 125);
+            this.btnXmenos1.Name = "btnXmenos1";
+            this.btnXmenos1.Size = new System.Drawing.Size(88, 44);
+            this.btnXmenos1.TabIndex = 34;
+            this.btnXmenos1.Text = "x^-1";
+            this.btnXmenos1.UseVisualStyleBackColor = false;
+            this.btnXmenos1.Click += new System.EventHandler(this.BtnXmenos1_Click);
             // 
             // btnPi
             // 
@@ -655,45 +657,50 @@
             this.btnPi.UseVisualStyleBackColor = false;
             this.btnPi.Click += new System.EventHandler(this.BtnPi_Click);
             // 
-            // button16
+            // btnCubo
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(200, 175);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(88, 44);
-            this.button16.TabIndex = 32;
-            this.button16.Text = "x^3";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnCubo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnCubo.FlatAppearance.BorderSize = 0;
+            this.btnCubo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCubo.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCubo.ForeColor = System.Drawing.Color.White;
+            this.btnCubo.Location = new System.Drawing.Point(200, 175);
+            this.btnCubo.Name = "btnCubo";
+            this.btnCubo.Size = new System.Drawing.Size(88, 44);
+            this.btnCubo.TabIndex = 32;
+            this.btnCubo.Text = "x^3";
+            this.btnCubo.UseVisualStyleBackColor = false;
+            this.btnCubo.Click += new System.EventHandler(this.BtnCubo_Click);
             // 
-            // button17
+            // btnRaizX
             // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Location = new System.Drawing.Point(106, 175);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(88, 44);
-            this.button17.TabIndex = 31;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnRaizX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnRaizX.FlatAppearance.BorderSize = 0;
+            this.btnRaizX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRaizX.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRaizX.ForeColor = System.Drawing.Color.White;
+            this.btnRaizX.Location = new System.Drawing.Point(106, 175);
+            this.btnRaizX.Name = "btnRaizX";
+            this.btnRaizX.Size = new System.Drawing.Size(88, 44);
+            this.btnRaizX.TabIndex = 31;
+            this.btnRaizX.Text = "y √x";
+            this.btnRaizX.UseVisualStyleBackColor = false;
+            this.btnRaizX.Click += new System.EventHandler(this.BtnRaizX_Click);
             // 
-            // button18
+            // btnNeperiano
             // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(12, 175);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(88, 44);
-            this.button18.TabIndex = 30;
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnNeperiano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnNeperiano.FlatAppearance.BorderSize = 0;
+            this.btnNeperiano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNeperiano.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNeperiano.ForeColor = System.Drawing.Color.White;
+            this.btnNeperiano.Location = new System.Drawing.Point(12, 175);
+            this.btnNeperiano.Name = "btnNeperiano";
+            this.btnNeperiano.Size = new System.Drawing.Size(88, 44);
+            this.btnNeperiano.TabIndex = 30;
+            this.btnNeperiano.Text = "e";
+            this.btnNeperiano.UseVisualStyleBackColor = false;
+            this.btnNeperiano.Click += new System.EventHandler(this.BtnNeperiano_Click);
             // 
             // btnTan
             // 
@@ -785,88 +792,95 @@
             this.btnSin1.UseVisualStyleBackColor = false;
             this.btnSin1.Click += new System.EventHandler(this.BtnSin1_Click);
             // 
-            // button4
+            // btnCuadrado
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(200, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 44);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "x^2";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCuadrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnCuadrado.FlatAppearance.BorderSize = 0;
+            this.btnCuadrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCuadrado.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCuadrado.ForeColor = System.Drawing.Color.White;
+            this.btnCuadrado.Location = new System.Drawing.Point(200, 225);
+            this.btnCuadrado.Name = "btnCuadrado";
+            this.btnCuadrado.Size = new System.Drawing.Size(88, 44);
+            this.btnCuadrado.TabIndex = 23;
+            this.btnCuadrado.Text = "x^2";
+            this.btnCuadrado.UseVisualStyleBackColor = false;
+            this.btnCuadrado.Click += new System.EventHandler(this.BtnCuadrado_Click);
             // 
-            // button5
+            // btnRaizCubica
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(106, 225);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(88, 44);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnRaizCubica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnRaizCubica.FlatAppearance.BorderSize = 0;
+            this.btnRaizCubica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRaizCubica.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRaizCubica.ForeColor = System.Drawing.Color.White;
+            this.btnRaizCubica.Location = new System.Drawing.Point(106, 225);
+            this.btnRaizCubica.Name = "btnRaizCubica";
+            this.btnRaizCubica.Size = new System.Drawing.Size(88, 44);
+            this.btnRaizCubica.TabIndex = 22;
+            this.btnRaizCubica.Text = "3 √x";
+            this.btnRaizCubica.UseVisualStyleBackColor = false;
+            this.btnRaizCubica.Click += new System.EventHandler(this.BtnRaizCubica_Click);
             // 
-            // button6
+            // btnFactorial
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(12, 225);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 44);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "n!";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnFactorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnFactorial.FlatAppearance.BorderSize = 0;
+            this.btnFactorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFactorial.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactorial.ForeColor = System.Drawing.Color.White;
+            this.btnFactorial.Location = new System.Drawing.Point(12, 225);
+            this.btnFactorial.Name = "btnFactorial";
+            this.btnFactorial.Size = new System.Drawing.Size(88, 44);
+            this.btnFactorial.TabIndex = 21;
+            this.btnFactorial.Text = "n!";
+            this.btnFactorial.UseVisualStyleBackColor = false;
+            this.btnFactorial.Click += new System.EventHandler(this.BtnFactorial_Click);
             // 
-            // button3
+            // btnLog
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(200, 275);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 44);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Log";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnLog.FlatAppearance.BorderSize = 0;
+            this.btnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLog.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.ForeColor = System.Drawing.Color.White;
+            this.btnLog.Location = new System.Drawing.Point(200, 275);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(88, 44);
+            this.btnLog.TabIndex = 20;
+            this.btnLog.Text = "Log";
+            this.btnLog.UseVisualStyleBackColor = false;
+            this.btnLog.Click += new System.EventHandler(this.BtnLog_Click);
             // 
-            // button2
+            // btnEXP
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(106, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 44);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "EXP";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEXP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btnEXP.FlatAppearance.BorderSize = 0;
+            this.btnEXP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEXP.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEXP.ForeColor = System.Drawing.Color.White;
+            this.btnEXP.Location = new System.Drawing.Point(106, 275);
+            this.btnEXP.Name = "btnEXP";
+            this.btnEXP.Size = new System.Drawing.Size(88, 44);
+            this.btnEXP.TabIndex = 19;
+            this.btnEXP.Text = "EXP";
+            this.btnEXP.UseVisualStyleBackColor = false;
+            this.btnEXP.Click += new System.EventHandler(this.BtnEXP_Click);
             // 
-            // button1
+            // btn10elevarX
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 44);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "10^x";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn10elevarX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(49)))), ((int)(((byte)(79)))));
+            this.btn10elevarX.FlatAppearance.BorderSize = 0;
+            this.btn10elevarX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn10elevarX.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn10elevarX.ForeColor = System.Drawing.Color.White;
+            this.btn10elevarX.Location = new System.Drawing.Point(12, 275);
+            this.btn10elevarX.Name = "btn10elevarX";
+            this.btn10elevarX.Size = new System.Drawing.Size(88, 44);
+            this.btn10elevarX.TabIndex = 18;
+            this.btn10elevarX.Text = "10^x";
+            this.btn10elevarX.UseVisualStyleBackColor = false;
+            this.btn10elevarX.Click += new System.EventHandler(this.Btn10elevarX_Click);
             // 
             // panelTop
             // 
@@ -999,24 +1013,24 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn_decimal;
         private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnExponente;
+        private System.Windows.Forms.Button btnXmenos1;
         private System.Windows.Forms.Button btnPi;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button btnCubo;
+        private System.Windows.Forms.Button btnRaizX;
+        private System.Windows.Forms.Button btnNeperiano;
         private System.Windows.Forms.Button btnTan;
         private System.Windows.Forms.Button btnCos;
         private System.Windows.Forms.Button btnSin;
         private System.Windows.Forms.Button btnTan1;
         private System.Windows.Forms.Button btnCos1;
         private System.Windows.Forms.Button btnSin1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCuadrado;
+        private System.Windows.Forms.Button btnRaizCubica;
+        private System.Windows.Forms.Button btnFactorial;
+        private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Button btnEXP;
+        private System.Windows.Forms.Button btn10elevarX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_principal;
         private System.Windows.Forms.TextBox txtBox_previo;
